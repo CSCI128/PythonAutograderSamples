@@ -1,2 +1,3 @@
-# PythonAutograderSamples
-Sample autograders for CSCI128 at Colorado School of Mines
+# Sample Autograders
+
+The autograders in this repo will serve as a pulbic example of how autograders should be implemented utilizing the Gradescope Autograder Platfrom with the 128Autograder.
