@@ -1,0 +1,3 @@
+[submodule "autograder_base"]
+	path = autograder_base
+	url = https://github.com/CSCI128/128Autograder.git
