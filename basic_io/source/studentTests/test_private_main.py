@@ -17,7 +17,7 @@ from TestingFramework import BaseTest
 from StudentSubmission.common import PossibleResults
 
 
-class TestPublicMain(BaseTest):
+class TestPrivateMain(BaseTest):
     def setUp(self):
         self.environment = StudentSubmissionExecutor.generateNewExecutionEnvironment(self.studentSubmission)
         self.environment.timeout = 1
@@ -51,7 +51,7 @@ class TestPublicMain(BaseTest):
     @weight(1)
     @number(3.1)
     def test_many_items_not_in_inventory(self):
-        """Sale of many items not in _inventory"""
+        """Sale of many items not in inventory"""
         # Make sure that the name for the private tests is still helpful,
         #  so the student has an idea of what was tested and what will help.
         #  This also helps TAs in OH when they need to quickly be reminded about
@@ -69,9 +69,9 @@ class TestPublicMain(BaseTest):
         expectedOutput = [
             "Received shipment of 50 apples",
             "Sold 50 apples",
-            "ERROR: bananas not found in _inventory",
-            "ERROR: bananas not found in _inventory",
-            "ERROR: oranges not found in _inventory"
+            "ERROR: bananas not found in inventory",
+            "ERROR: bananas not found in inventory",
+            "ERROR: oranges not found in inventory",
             "apples: 0"
         ]
 
@@ -80,10 +80,10 @@ class TestPublicMain(BaseTest):
     @weight(1)
     @number(3.2)
     def test_repeated_sale(self):
-        """Many sales of the same _item"""
+        """Many sales of the same item"""
 
         stdin = [
-            "shipment:apples:150"
+            "shipment:apples:150",
             "sale:apples:50",
             "sale:apples:50",
             "sale:apples:60",
