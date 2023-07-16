@@ -23,15 +23,15 @@ def handle_input(_inventory: dict, _userIn: str):
     chgType, item, quantity = _userIn.split(":")
 
     if chgType == "sale":
-        handle_sale(_inventory, item, quantity)
+        handle_sale(_inventory, item, int(quantity))
 
     if chgType == "shipment":
-        handle_shipment(_inventory, item, quantity)
+        handle_shipment(_inventory, item, int(quantity))
 
 
 def end_day(_inventory: dict):
     if not _inventory:
-        print("OUTPUT No items in _inventory")
+        print("OUTPUT No items in inventory")
         return
 
     for item, quantity in _inventory.items():
@@ -40,10 +40,11 @@ def end_day(_inventory: dict):
 
 if __name__ == "__main__":
 
-    userIn = input("INPUT> ")
+    userIn = str(input("INPUT> "))
     inventory: dict = {}
 
     while userIn != "EOD":
         handle_input(inventory, userIn)
+        userIn = str(input("INPUT> "))
 
     end_day(inventory)
