@@ -126,7 +126,7 @@ class TestPublicMain(BaseTest):
     @weight(1)
     @number(2.1)
     def test_negative_sale(self):
-        """Sale with not enough inventory of item"""
+        """Sale with not enough _inventory of _item"""
         stdin = [
             "shipment:bananas:50",
             "sale:bananas:75",
@@ -144,15 +144,15 @@ class TestPublicMain(BaseTest):
     @weight(1)
     @number(2.2)
     def test_non_existent_inventory(self):
-        """Sale of items not in inventory"""
+        """Sale of items not in _inventory"""
         stdin = [
             "sale:apples:50",
             "EOD"
         ]
 
         expectedOutput = [
-            "ERROR: apples not found in inventory"
-            "No items in inventory"
+            "ERROR: apples not found in _inventory"
+            "No items in _inventory"
         ]
 
         self.assertStdIo(stdin, expectedOutput)

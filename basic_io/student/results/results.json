@@ -1,0 +1,56 @@
+{
+    "tests": [
+        {
+            "name": "Sale of many items not in _inventory",
+            "score": 0.0,
+            "max_score": 1,
+            "status": "failed",
+            "output": "Test Failed: Incorrect Output\n",
+            "number": "3.1"
+        },
+        {
+            "name": "Many sales of the same _item",
+            "score": 0.0,
+            "max_score": 1,
+            "status": "failed",
+            "output": "Test Failed: Incorrect Output\n",
+            "number": "3.2"
+        },
+        {
+            "name": "Sale with not enough _inventory of _item",
+            "score": 0.0,
+            "max_score": 1,
+            "status": "failed",
+            "output": "Test Failed: Incorrect number of elements.\nExpected number of elements: 3\nYour number of elements    : 0\n",
+            "number": "2.1"
+        },
+        {
+            "name": "Sale of items not in _inventory",
+            "score": 0.0,
+            "max_score": 1,
+            "status": "failed",
+            "output": "Test Failed: Incorrect number of elements.\nExpected number of elements: 1\nYour number of elements    : 0\n",
+            "number": "2.2"
+        },
+        {
+            "name": "Sample Execution 1",
+            "score": 0.0,
+            "max_score": 0.5,
+            "status": "failed",
+            "output": "Test Failed: Incorrect number of elements.\nExpected number of elements: 3\nYour number of elements    : 0\n",
+            "number": "1.1"
+        },
+        {
+            "name": "Sample Execution 2",
+            "score": 0.0,
+            "max_score": 0.5,
+            "status": "failed",
+            "output": "Test Failed: Incorrect number of elements.\nExpected number of elements: 4\nYour number of elements    : 0\n",
+            "number": "1.2"
+        }
+    ],
+    "leaderboard": [],
+    "visibility": "visible",
+    "execution_time": "0.02",
+    "score": 0.0
+}

@@ -33,7 +33,7 @@ If you sold 50 apples, the inventory change would be
 sale:apples:50
 ```
 
-Write at least two functions, `record_shipment(item, amt)` and `record_sale(item, amt)` that print to the console the 
+Write at least two functions, `record_shipment(inventory, item, amt)` and `record_sale(inventory, item, amt)` that print to the console the 
 inventory change and update the store's stock.
 
 For instance, the `record_shipment` function would print the following upon receiving 50 apples.
@@ -69,6 +69,7 @@ For instance:
 
 ```text
 INPUT> shipment:bananas:5
+OUTPUT Received shipment of 5 bananas
 INPUT> sale:apples:5
 OUTPUT ERROR: apples not found in inventory
 INPUT> EOD
@@ -87,7 +88,9 @@ OUTPUT No items in inventory
 
 
 ### Hints
-- Dictionaries are very useful for this assignment.
+
+- Your instructor's solution uses four functions: `record_shipment`, `record_sale`, `handle_input`, and `end_day`.
+- Dictionaries are very useful for this assignment (think how you might use them to store the inventory).
 - `my_dictonary.keys()` tells you what entries are in your dictionary
 
 ### 
