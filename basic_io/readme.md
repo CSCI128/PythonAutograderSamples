@@ -89,10 +89,8 @@ OUTPUT No items in inventory
 
 ### Hints
 
-- Your instructor's solution uses four functions: `record_shipment`, `record_sale`, `handle_input`, and `end_day`.
+- Your instructor's solution uses four functions: `handle_shipment`, `handle_sale`, `handle_input`, and `end_day`.
 - Dictionaries are very useful for this assignment (think how you might use them to store the inventory).
 - `my_dictonary.keys()` tells you what entries are in your dictionary
-
-### 
 
 
