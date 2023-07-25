@@ -76,7 +76,11 @@ class TestPublicMain(BaseTest):
 
         # Attempt to get stdout from the student's execution.
         #  If stdout doesn't exist, then an assertion error will be raised
-        actualOutput = StudentSubmissionExecutor.getOrAssert(PossibleResults.STDOUT)
+        actualOutput = StudentSubmissionExecutor.getOrAssert(self.environment, PossibleResults.STDOUT)
+
+        # While not strictly necessary, this assertion can be helpful, especially if there are alot of unique
+        #  assertions on the output.
+        self.assertCorrectNumberOfOutputLines(expectedOutput, actualOutput)
 
         # The assertion here will be shown to the student, so they know where they went wrong
         self.assertEqual(expectedOutput, actualOutput)

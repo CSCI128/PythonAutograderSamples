@@ -35,7 +35,7 @@ class TestPrivateMain(BaseTest):
 
         StudentSubmissionExecutor.execute(self.environment, self.runner)
 
-        actualOutput = StudentSubmissionExecutor.getOrAssert(PossibleResults.STDOUT)
+        actualOutput = StudentSubmissionExecutor.getOrAssert(self.environment, PossibleResults.STDOUT)
 
         try:
             self.assertEqual(expectedOutput, actualOutput)
