@@ -1,6 +1,6 @@
 # Basic IO Autograder Example
 
-This autograder is a demonstration on how to do basic IO with the autograder platform.
+This autograder is a demonstration on how to create a stdio autograder with the autograder platform.
 This autograder uses both functions and code executed in `__main__`. For this autograder, return values
 are not taken in consideration.
 
